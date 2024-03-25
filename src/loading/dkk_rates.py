@@ -29,8 +29,10 @@ df[float_cols] = df[float_cols].astype(float)
 # Target state: is that rates are given as number of DKK per 1 unit of foreign currency
 df[float_cols] /= 100
 
-# Ad-hoc missing values analysis
+# Number of missings
 df.isna().sum(axis=0)
+
+# Replace missings by linear interpolation
 mask__some_rate_missing = 0 < df[float_cols].isna().sum(axis=1)
 df.loc[mask__some_rate_missing, float_cols] = df[float_cols].interpolate().loc[mask__some_rate_missing]
 

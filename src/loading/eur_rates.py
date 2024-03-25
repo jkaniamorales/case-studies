@@ -23,8 +23,10 @@ df["date"] = pd.to_datetime(df["date"], format="%Y-%m-%d")
 float_cols = ["EUR_GBP", "EUR_JPY", "EUR_USD"]
 df[float_cols] = df[float_cols].astype(float)
 
-# Ad-hoc missing values analysis
+# Number of missings
 df.isna().sum(axis=0)
+
+# Replace missings by linear interpolation
 mask__some_rate_missing = 0 < df[float_cols].isna().sum(axis=1)
 df.loc[mask__some_rate_missing, float_cols] = df[float_cols].interpolate().loc[mask__some_rate_missing]
 

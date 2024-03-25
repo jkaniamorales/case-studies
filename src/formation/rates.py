@@ -12,6 +12,17 @@ df2 = df2[["date", "EUR_USD", "EUR_GBP", "EUR_JPY"]]
 # Merge
 df = df1.merge(df2, how="left")
 
+# Number of missings
+df.isna().sum(axis=0)
+
+# Replace missings by linear interpolation
+float_cols = [x for x in df.columns if x != "date"]
+mask__some_rate_missing = 0 < df[float_cols].isna().sum(axis=1)
+df.loc[mask__some_rate_missing, float_cols] = df[float_cols].interpolate().loc[mask__some_rate_missing]
+
+# Validation check
+df.isna().sum(axis=0)
+
 # New columns
 df["EUR_DKK__cross_USD"] = df["EUR_USD"] * df["USD_DKK"]
 df["EUR_DKK__cross_GBP"] = df["EUR_GBP"] * df["GBP_DKK"]
