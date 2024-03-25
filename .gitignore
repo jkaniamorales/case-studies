@@ -5,3 +5,19 @@
 .vscode/
 **/__pycache__
 **/.ipynb_checkpoints
+
+data/*
+
+!data/raw
+!data/processed
+!data/final
+
+data/raw/*
+data/processed/*
+data/final/*
+
+!data/raw/.gitkeep
+!data/raw/202432301053455703709DNVALD00929048219.csv
+!data/raw/ECB Data Portal_20240323004431.csv
+!data/processed/.gitkeep
+!data/final/.gitkeep

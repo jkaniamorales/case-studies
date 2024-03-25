@@ -14,8 +14,7 @@ This is Juan Kania-Morales' repository which contains sample analyses:
 2. Create isolated python environment named .venv:\
 ```"<python path>" -m venv "<git repository path>\.venv"```\
 Recommended version of python is 3.10.6 or higher.
-3. Activate the environment
-4. Install requirements.txt: ```pip install -r requirements.txt```
-5. Run tests with ```pytest -v --tb=no --no-header```
-6. Run data setup script ```sh setup.sh```.
-7. You are ready to run existing analyses from **src/analysis**
+3. Activate the environment and install requirements.txt: ```pip install -r requirements.txt```
+4. Run tests with ```pytest -v --tb=no --no-header```
+5. Run data setup script ```sh setup.sh```.
+6. You are ready to run existing analyses from **src/analysis**
