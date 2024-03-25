@@ -1,9 +1,9 @@
-# Introduction
+# Summary
 This is Juan Kania-Morales' repository which contains sample analyses:
 
-1.  case 1:
+1.  case:
     * [Python Exercise](src/analysis/Python_Exercise1.ipynb)
-2.  case 2:
+2.  case:
     * [SQL Exercise 1](src/analysis/SQL_Exercise1.ipynb)
     * [SQL Exercise 2](src/analysis/SQL_Exercise2.ipynb)
     * [SQL Exercise 3](src/analysis/SQL_Exercise3.ipynb)
@@ -11,7 +11,8 @@ This is Juan Kania-Morales' repository which contains sample analyses:
 --------------------------------------------------------------------------------
 # Reproducibility (~5 minutes)
 1. Clone this repository to your working environment
-2. Create isolated python environment named .venv: ```"<python path>" -m venv "<git repository path>\.venv"```\
+2. Create isolated python environment named .venv:/
+```"<python path>" -m venv "<git repository path>\.venv"```/
 Recommended version of python is 3.10.6 or higher.
 3. Activate the environment
 4. Install requirements.txt: ```pip install -r requirements.txt```
