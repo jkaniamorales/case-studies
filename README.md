@@ -1,8 +1,9 @@
 # Introduction
 This is Juan Kania-Morales' repository which contains sample analyses:
-1. case 1:
+
+1.  case 1:
     * [title1](src/analysis)
-2. case 2:
+2.  case 2:
     * [title2](src/analysis/SQL_Exercise1.ipynb)
     * [title3](src/analysis/SQL_Exercise2.ipynb)
     * [title4](src/analysis/SQL_Exercise3.ipynb)
